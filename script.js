@@ -113,13 +113,13 @@ var partyEvent = function() {
      lunchTime = lunchTimeSelector.value;
  };
  
- var napEvent = function()
+ var hackathonEvent = function()
  {
-     napTime = hackathonTimeSelector.value;
+     hackathonTime = hackathonTimeSelector.value;
  };
 
 //listeners
 buttonMessage.addEventListener("click", partyEvent);
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
-hackathonTimeSelector.addEventListener('change', napEvent);
+hackathonTimeSelector.addEventListener('change', hackathonEvent);
