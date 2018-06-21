@@ -2,7 +2,7 @@
 var messageText;
 var noon = 12;
 var evening = 17; 
-var wakeupTime = 7; 
+var wakeUpTime = 7; 
 var lunchTime = 13; 
 var partyTime = 21; 
 var hackathonTime = 14; 
@@ -11,8 +11,6 @@ var message = document.getElementById('timeEvent');
 var codeImage = document.getElementById('code');
 var image = "img/code.jpg";
 var clock = document.getElementById('clock');
-
-
 var oneSecond = 1000; 
 var isPartyTime = false; 
 var buttonMessage = document.getElementById("partyTimeButton");
@@ -38,7 +36,7 @@ if (time == partyTime){
 } else if (time == lunchTime) {
     messageText = "Food o'clock";
 	image = "img/lunch.jpg";
-} else if (time == wakeupTime) {
+} else if (time == wakeUpTime) {
     messageText = "Wakey wakey! It's code-o'clock!";
 	image = "img/wake.jpg";
 } else if (time < noon) { 
