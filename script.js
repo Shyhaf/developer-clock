@@ -11,12 +11,8 @@ var message = document.getElementById('timeEvent');
 var codeImage = document.getElementById('code');
 var image = "img/code.jpg";
 var clock = document.getElementById('clock');
-var currentTime = new Date();
-var hours = currentTime.getHours();
-var minutes = currentTime.getMinutes();
-var seconds = currentTime.getSeconds();
-var meridian = "AM";
-var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
+
+
 var oneSecond = 1000; 
 var isPartyTime = false; 
 var buttonMessage = document.getElementById("partyTimeButton");
@@ -60,6 +56,11 @@ codeImage.src= image;
 
 var showCurrentTime = function()
 {
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+var seconds = currentTime.getSeconds();
+var meridian = "AM";
   
     if (hours >= noon) 
     { 
@@ -77,11 +78,12 @@ var showCurrentTime = function()
     {
         seconds = "0" + seconds;
     }
-   
+    var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
     clock.innerText = clockTime;
-};	
+}	
 showCurrentTime();
 };
+
 updateClock(); 	
 setInterval( updateClock, oneSecond);
 
