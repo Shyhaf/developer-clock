@@ -41,10 +41,10 @@ if (time == partyTime){
 	image = "img/hackathon.png";
 } else if (time == lunchTime) {
     messageText = "Food o'clock";
-	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg";
+	image = "img/lunch.jpg";
 } else if (time == wakeupTime) {
     messageText = "Wakey wakey! It's code-o'clock!";
-	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
+	image = "img/wake.jpg";
 } else if (time < noon) { 
     messageText = "Code.Morning";
     image = "img/code.jpg";
