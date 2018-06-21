@@ -32,13 +32,13 @@ if (time == partyTime){
 	image = "img/party.jpg";
 } else if (time == hackathonTime) {
     messageText = "Hack away!";
-	image = "img/hackathon.png";
+	image = "img/hackathon2.jpg";
 } else if (time == lunchTime) {
     messageText = "Food o'clock";
 	image = "img/lunch.jpg";
 } else if (time == wakeUpTime) {
-    messageText = "Wakey wakey! It's code-o'clock!";
-	image = "img/wake.jpg";
+    messageText = "It's code-o'clock!";
+	image = "img/wake2.jpg";
 } else if (time < noon) { 
     messageText = "Code.Morning";
     image = "img/code.jpg";
